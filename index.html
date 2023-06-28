@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" readonly>
+      </div>
+      <div class="buttons">
+        <button class="operator" onclick="clearResult()">AC</button>
+        <button class="operator" onclick="deleteLastCharacter()">C</button>
+        <button class="operator" onclick="calculatePercentage()">%</button>
+        <button class="operator" onclick="appendOperator('*')">×</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button class="operator" onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button class="operator" onclick="appendOperator('+')">+</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button class="operator" onclick="appendOperator('/')">÷</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendNumber('000')">000</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button class="operator" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
